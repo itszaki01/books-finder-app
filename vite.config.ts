@@ -5,7 +5,6 @@ import autoprefixer from "autoprefixer";
 
 export default defineConfig({
     plugins: [react()],
-    base:'/books-finder/',
     css: {
         postcss: {
             plugins: [

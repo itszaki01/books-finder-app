@@ -1,6 +1,5 @@
 {
     "name": "bun-vite-ts-scss-clean",
-    "homepage": "https://itszaki01.github.io/books-finder/",
     "private": true,
     "version": "0.0.0",
     "type": "module",
