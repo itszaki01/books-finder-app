@@ -1,0 +1,42 @@
+@use "/src/scss/_index.scss" as *;
+@use "sass:math";
+nav {
+    grid-area: navb;
+    background-color: $theme-primary;
+    box-shadow: 0px 0px 5px 2px rgba($color: #000000, $alpha: 0.5);
+    .nav-bar-container {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include only-desktop-view {
+            width: percentage(math.div(10, 12));
+            margin: auto;
+        }
+        @include mobile-tablet-view {
+            padding: 5px;
+        }
+        svg {
+            color: white;
+            font-size: 25px;
+        }
+        section {
+            display: inherit;
+            align-items: inherit;
+            height: inherit;
+        }
+        .seciton-one {
+            gap: 30px;
+            h1 {
+                color: white;
+                font-size: x-large;
+            }
+        }
+        .section-two {
+            svg {
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}

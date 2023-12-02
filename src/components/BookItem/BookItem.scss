@@ -1,0 +1,14 @@
+@use '/src/scss/_index.scss' as *;
+
+.book-item-container{
+    img{
+        border: 1px solid $theme-text-drk-wht;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        &:hover{
+            opacity: 80%;
+            border-bottom: 5px solid $blue-400;
+        }
+    }
+}

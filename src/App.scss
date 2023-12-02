@@ -1,0 +1,20 @@
+@use "./scss/_index.scss" as *;
+
+.app-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 150px 1fr 100px;
+    grid-template-areas:
+        "navb navb navb navb navb navb navb navb navb navb navb navb"
+        "srch srch srch srch srch srch srch srch srch srch srch srch"
+        ". bksl bksl bksl bksl bksl bksl bksl bksl bksl bksl ."
+        "fotr fotr fotr fotr fotr fotr fotr fotr fotr fotr fotr fotr";
+    @include mobile-tablet-view {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "navb"
+            "srch"
+            "bksl"
+            "fotr";
+    }
+}

@@ -1,0 +1,41 @@
+@use "/src/scss/_index.scss" as *;
+
+//Loader Style
+.loader {
+    grid-area: bksl;
+    display: flex;
+    justify-content: center;
+}
+
+//Error Style
+.books-list-is-error {
+    grid-area: bksl;
+    display: flex;
+    justify-content: center;
+    color: $red-500;
+}
+
+.books-list-container {
+    grid-area: bksl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .list-header {
+        h1 {
+            text-align: center;
+            color: $theme-text-drk-wht;
+        }
+    }
+    .list-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-auto-flow: row;
+        grid-auto-rows: auto;
+        gap: 5px;
+        margin: 10px 0;
+        @include mobile-tablet-view {
+            padding: 0 5px;
+        }
+    }
+}

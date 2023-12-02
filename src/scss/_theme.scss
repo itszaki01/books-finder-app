@@ -1,0 +1,25 @@
+@use "./colors" as *;
+
+//Defualt Theme Light
+:root {
+    --theme-primary: #{$blue-500};
+    --theme-dark-ligth: #{$gray-200};
+    --theme-input-background: rgba(255, 255, 255, 0.465);
+    --theme-text-drk-wht: #{$gray-800};
+}
+
+//Dark Theme 
+.dark-theme {
+    --theme-primary: #{$gray-800};
+    --theme-dark-ligth: #{$zinc-800};
+    --theme-input-background: rgba(0, 0, 0, 0.112);
+    --theme-text-drk-wht: white;
+}
+
+
+//Varibles
+$theme-primary: var(--theme-primary);
+$theme-dark-ligth: var(--theme-dark-ligth);
+$theme-input-background: var(--theme-input-background);
+$theme-text-drk-wht: var(--theme-text-drk-wht);
+
